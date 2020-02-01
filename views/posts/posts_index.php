@@ -9,13 +9,13 @@
     <p><?php echo $post['post_text'];?></p>
     <div>
             <div> Posted:
-                <span class="badge badge-success"><?php echo $post['post-created']?>
+                <span class="badge badge-success"><?php echo $post['post_created']?>
                 </span>
             </div>Tags:
-        <span class="badge badge-primary">alice</span>
-        <span class="badge badge-primary">story</span>
-        <span class="badge badge-primary">blog</span>
-        <span class="badge badge-primary">personal</span></div>
+        <?php foreach ($tags[$post['post_id']] as $tag):?>
+        <span class="badge badge-primary"><?php echo $tag?></span>
+        <?php endforeach;?>
+    </div>
 </div>
     <hr>
 <?php endforeach;?>
