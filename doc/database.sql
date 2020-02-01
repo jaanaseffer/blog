@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2020 at 06:55 PM
+-- Generation Time: Feb 01, 2020 at 07:16 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -34,14 +34,15 @@ CREATE TABLE IF NOT EXISTS `post` (
   `user_id` int(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`post_id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `post`
 --
 
 INSERT INTO `post` (`post_id`, `post_subject`, `post_text`, `post_created`, `user_id`) VALUES
-(1, 'Esimene postitus', 'phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.', '2020-02-01 17:09:30', 0);
+(1, 'Esimene postitus', 'phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB. Frequently used operations (managing databases, tables, columns, relations, indexes, users, permissions, etc) can be performed via the user interface, while you still have the ability to directly execute any SQL statement.', '2020-02-01 17:09:30', 0),
+(2, 'Teine postitus', 'Bootstrap Snippets\r\nFree ready to use UI design elements / templates, code snippets and playground for the Bootstrap framework. Advertisements. Tags: all alert accordion carousel dropdown form login media object modal navbar pagination sign up table thumbnail.', '2020-02-01 18:14:05', 0);
 
 -- --------------------------------------------------------
 
