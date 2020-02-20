@@ -7,7 +7,7 @@
         <p>Tags:
             <?php foreach ($tags as $tag): ?>
             <span class="badge badge-primary"><?php echo $tag['tag_name'];?></span>
-            <?php endforeach;?>
+            <?php endforeach; ?>
         </p>
         <hr>
         <p><?php echo $post['post_text'];?></p>

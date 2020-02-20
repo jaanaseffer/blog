@@ -18,7 +18,9 @@
 
     <!-- Site core CSS -->
     <link href="assets/css/main.css?<?=COMMIT_HASH?>" rel="stylesheet">
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <style>
         body {
             padding-top: 70px;
@@ -46,8 +48,8 @@
         <a class="navbar-brand" href="#"><?=PROJECT_NAME ?></a>
         <ul class="navbar-nav">
             <li class="nav-item <?= $controller == 'posts' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>">Posts</a></li>
-            <li class="nav-item <?= $controller == 'tags' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>">Tags</a></li>
-            <li class="nav-item <?= $controller == 'users' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>">Users</a></li>
+            <li class="nav-item <?= $controller == 'tags' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>tags">Tags</a></li>
+            <li class="nav-item <?= $controller == 'users' ? 'active' : '' ?>"><a class="nav-link" href="<?php echo BASE_URL;?>users">Users</a></li>
             <li class="nav-item <?= $controller == 'halo' ? 'active' : '' ?>"><a class="nav-link" href="halo">Halo admin</a></li>
             <!-- dropdown list item start -->
             <li class="nav-item dropdown">
